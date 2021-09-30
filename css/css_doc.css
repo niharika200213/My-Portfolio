@@ -9,17 +9,18 @@
     display: table;
 }
 
-/* for tabs */ 
-@media only screen and (max-width: 850px) {    
-}
-
 /* for phones */
 @media only screen and (max-width: 500px) {
     nav{
         position: sticky !important;
+        width: 100% !important;
+    }
+    nav ul li a{
+        font-size: 30px !important;
+        padding: 5px !important;
     }
     nav ul{
-        margin-left: -60%;
+        margin-left: -50%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -28,21 +29,45 @@
         display: none;
     }
     .first{
-        font-size: 20px;
-        padding-left: 18%;
+        font-size: 30px !important;
+        margin: -10% 0 0 0 !important;
     }
     .first p:nth-child(2){
-        padding-left: 70%;
+        padding-left: 5%;
     }
+    #bg{height: 200px !important;width: 100% !important;}
     .profile{
-        display: none;
+        height: 250px !important;
+        margin-top: 20px !important;
+        margin-left: 12% !important;
+        padding-left: 10% !important;
+        width: 70% !important;
+        float: none !important;
     }
-    .phoneProfile{
-        display: block !important;
-        padding-left: 30%;
-        width: 100%;
+    .aboutcontent{
+        margin: 0px !important; 
+        width: 95% !important;
     }
-
+    .aboutcontent h2{
+        float: none !important;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+        font-size: 25px !important;
+        margin-top: 280px !important;
+        text-align: center !important;
+    }
+    .aboutcontent div{
+        float: none !important;
+        font-size: 20px !important;
+        margin-top: 10px !important;  
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+    #quote{
+        font-size: 20px !important;
+        text-align: center !important;
+        margin-bottom: 20px !important;
+    }
 }
 
 body{
@@ -66,19 +91,19 @@ nav ul{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    padding-left: 60%;
+    padding-left: 50%;
 }
 
 nav ul li{
-    margin: 5px;
+    margin: 5px 5px 10px 5px;
 }
 
 nav ul li a{
     text-align: center;
-    padding: 14px 16px;
+    padding: 23px 16px;
     text-decoration: none;
     color: darkgrey;
-    font-size: 25px;
+    font-size: 35px;
     font-family: 'Acme';
     transition: all 0.5s ease;
 }
@@ -98,60 +123,64 @@ nav div{
     color: rgb(255, 0, 0);
     position: relative;
     margin-top: -32px;
-    top: 40px;
-    font-size: 30px;
+    top: 50px;
+    font-size: 40px;
     left: 25px;
     letter-spacing: 1px;
     word-spacing: 3px;
 }
 
 .first{
-    width: 100%;
-    background-color: rgb(255, 0, 0);
     padding-bottom: 40px;
     padding-top: 40px;
     color: white;
     text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
     font-family: 'Wendy One';
     animation-name: show;
-    font-size: 40px;
-    position: relative;
-    animation-duration: 2s;
+    font-size: 60px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    animation-duration: 1s;
     animation-timing-function: ease;
     text-align: center;
-    padding-right: 60%;
 }
 
 @keyframes show{
     from{left: -100%;}
-    to{left: 0;}
+    to{left: 5%;top: 20%;}
 }
 
 .profile{
     border-radius: 50%;
-    position: absolute;
-    top: 10%;
-    left: 70%;
-    cursor: pointer;
-    animation-name: pic;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    transition: width 1s, height 1s, transform 1s;
-}
-
-@keyframes pic{
-    from{left: -100%;}
-    to{left: 70%;top: 10%;}
-}
-
-.profile:hover{
-    width: 200px;
-    height: 300px;
-    transform: rotate(360deg);
-}
-
-.phoneProfile{
-    display: none;
-    border-radius: 50%;
+    margin-top: 20px;
+    margin-left: 65%;
     background-color: crimson;
+    height: 500px;
+    width: 400px;
+    padding-left: 2%;
+    float: left;
+    position: relative;
+    top: 0;
+}
+
+.aboutcontent{
+    color: white;
+    margin: 20px 20px 20px 50px;
+    width: 60%;
+    float: left;
+    position: absolute;
+    font-size: 25px;
+    text-align: justify;
+}
+.aboutcontent h2{
+    text-decoration: underline;
+    margin: 50px 0 20px 50px;
+    text-align: left;
+    color: crimson;
+}
+
+#quote{
+    font-family: 'Wellfleet';
+    font-size: 42px;
 }
