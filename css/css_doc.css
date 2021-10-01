@@ -44,17 +44,29 @@
         width: 70% !important;
         float: none !important;
     }
-    .aboutcontent{
+    .aboutcontent, #skills{
         margin: 0px !important; 
         width: 95% !important;
     }
     .aboutcontent h2{
         float: none !important;
-        margin-left: 10px !important;
-        margin-right: 10px !important;
-        font-size: 25px !important;
-        margin-top: 280px !important;
+        font-size: 32px !important;
+        margin: 300px 10px 20px 10px !important;
         text-align: center !important;
+    }
+    #skills h2{
+        margin: 430px 10px 50px 10px !important;
+        font-size: 32px !important;
+        text-align: center !important;    
+    }
+    #projects h2{
+        font-size: 32px !important;
+        margin: 50px 0px !important;
+        text-align: center !important;    
+    }
+    #skills img{
+        margin-left: 10px !important;
+        width: 100% !important;
     }
     .aboutcontent div{
         float: none !important;
@@ -64,10 +76,11 @@
         margin-right: 10px !important;
     }
     #quote{
-        font-size: 20px !important;
+        font-size: 25px !important;
         text-align: center !important;
         margin-bottom: 20px !important;
     }
+    .col50,.col25,.col30{width: 100% !important;float: none !important;}
 }
 
 body{
@@ -119,15 +132,16 @@ nav ul li a:active{
 }
 
 nav div{
-    font-family: 'Akronim';
+    font-family: 'Pattaya';
     color: rgb(255, 0, 0);
     position: relative;
-    margin-top: -32px;
+    margin-top: -35px;
     top: 50px;
-    font-size: 40px;
+    font-size: 45px;
     left: 25px;
     letter-spacing: 1px;
     word-spacing: 3px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
 .first{
@@ -153,7 +167,7 @@ nav div{
 
 .profile{
     border-radius: 50%;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left: 65%;
     background-color: crimson;
     height: 500px;
@@ -162,7 +176,14 @@ nav div{
     float: left;
     position: relative;
     top: 0;
+    cursor: pointer;
+    transition: width 2s, height 2s, transform 2s;
 }
+.profile:hover {
+    width: 500px;
+    height: 600px;
+    transform: rotate(10deg);
+  }
 
 .aboutcontent{
     color: white;
@@ -173,14 +194,53 @@ nav div{
     font-size: 25px;
     text-align: justify;
 }
-.aboutcontent h2{
-    text-decoration: underline;
-    margin: 50px 0 20px 50px;
+.aboutcontent h2,#skills h2,#projects h2{
+    margin: 50px 0 30px 50px;
     text-align: left;
     color: crimson;
+    font-family: 'Shojumaru';    
+    font-size: 40px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+#skills h2,#projects h2{
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 70px;
 }
 
 #quote{
-    font-family: 'Wellfleet';
+    font-family: 'Wendy One';
     font-size: 42px;
+}
+#aboutlines{
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-name: aboutanimation;
+    font-family: 'Acme';    
+}
+@keyframes aboutanimation{
+    from{left: -100%;}
+    to{left: 20px;}    
+}
+
+#skills{
+    color: white;
+    margin: 30px 10px 10px 10px;
+    font-size: 25px;
+    text-align: right;
+}
+#skills img{
+    margin: 0px;
+}
+.col30{width: 30%; float: left;}
+.col25{width: 25%; float: left;}
+.col50{width: 50%; float: left;}
+
+.card{
+    box-shadow: 0 4px 8px 0 white;
+    padding: 4px;
+    text-align: center;
+    background-color: rgb(35, 35, 35);
+    margin: 25px;
 }
