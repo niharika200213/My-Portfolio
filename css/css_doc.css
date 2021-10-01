@@ -59,10 +59,19 @@
         font-size: 32px !important;
         text-align: center !important;    
     }
-    #projects h2{
-        font-size: 32px !important;
+    .card{
+        width: 95% !important;
+    }
+    .card h2{
+        font-size: 20px !important;
         margin: 50px 0px !important;
         text-align: center !important;    
+    }
+    #projects h2{
+        text-align: center !important;
+        font-size: 32px !important;
+        margin-left: 10px !important;
+        margin-bottom: 30px !important;
     }
     #skills img{
         margin-left: 10px !important;
@@ -226,21 +235,42 @@ nav div{
 
 #skills{
     color: white;
-    margin: 30px 10px 10px 10px;
+    margin: 30px;
     font-size: 25px;
     text-align: right;
 }
 #skills img{
-    margin: 0px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10%;
 }
+
 .col30{width: 30%; float: left;}
 .col25{width: 25%; float: left;}
-.col50{width: 50%; float: left;}
+.col50{width: 45%; float: left;}
 
 .card{
     box-shadow: 0 4px 8px 0 white;
-    padding: 4px;
-    text-align: center;
+    text-align: justify;
     background-color: rgb(35, 35, 35);
-    margin: 25px;
+    width: 30%;
+    margin: 20px;
+    padding: 10px;
+}
+.card h2{
+    font-size: 25px !important;
+    margin: 20px !important;
+    text-align: center !important;
+}
+.card p{
+    color: white;
+    font-size: 20px;
+    font-family: 'Acme';
+    letter-spacing: 0.8px;
+    padding: 20px;
+}
+#pro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
