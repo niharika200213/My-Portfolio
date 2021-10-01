@@ -8,9 +8,38 @@
     clear: both;
     display: table;
 }
-
+@media only screen and (max-width: 1024px){
+    nav ul{margin-left: -45% !important;}
+    nav div{display: none !important;}
+    .first{margin-top: -100px !important;font-size: 35px !important;}
+    .profile{
+        margin-left: 55% !important;
+        width: 40% !important;
+    }
+    .card{width: 40% !important;}
+    #skills img{margin-left: 20px !important;margin-right: 20px !important;}
+}
+@media only screen and (max-width: 800px) {
+    .first{
+        width: 80% !important;
+        font-size: 50px !important;
+        margin-top: -20% !important;
+        margin-left: -25%;
+    }
+    nav ul{margin-left: -45% !important;}
+    nav div{display: none !important;}
+    .aboutcontent{margin-left: 10px !important;width: 70% !important;}
+    .profile{
+        margin-left: 58% !important;
+        width: 40% !important;
+    }
+    .card{width: 40% !important;}
+    #skills img{
+        margin-left: 20px !important;margin-right: 20px !important;
+    }
+}
 /* for phones */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 540px) {
     nav{
         position: sticky !important;
         width: 100% !important;
@@ -30,7 +59,7 @@
     }
     .first{
         font-size: 30px !important;
-        margin: -10% 0 0 0 !important;
+        margin: -8% 0 0 -15% !important;
     }
     .first p:nth-child(2){
         padding-left: 5%;
@@ -74,25 +103,34 @@
         margin-bottom: 30px !important;
     }
     #skills img{
-        margin-left: 10px !important;
-        width: 100% !important;
+        width: 80% !important;
+        margin-left: 20px !important;
+        margin-right: 0 !important;
     }
+    #skl{align-content: center !important;}
+    #skills img:last-child{height: 150px !important;}
     .aboutcontent div{
         float: none !important;
         font-size: 20px !important;
-        margin-top: 10px !important;  
-        margin-left: 10px !important;
-        margin-right: 10px !important;
+        margin: 10px 20px 50px 20px !important;
     }
     #quote{
-        font-size: 25px !important;
+        font-size: 20px !important;
         text-align: center !important;
-        margin-bottom: 20px !important;
+        margin-bottom: 40px !important;
     }
     .col50,.col25,.col30{width: 100% !important;float: none !important;}
     .footer{
         font-size: 20px !important;
     }
+}
+
+@media only screen and (max-width: 280px){
+    #quote{display: none !important;}
+    .first{margin-top: 0 !important;}
+    .card{width: 90% !important;}
+    #skills img{width: 80% !important}
+    #contact h2{font-size: 25px !important;}
 }
 
 body{
@@ -116,7 +154,7 @@ nav ul{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    padding-left: 50%;
+    padding-left: 45%;
 }
 
 nav ul li{
@@ -206,12 +244,18 @@ nav div{
     font-size: 25px;
     text-align: justify;
 }
-.aboutcontent h2,#skills h2,#projects h2,#contact h2{
+.aboutcontent h2,#skills h2,#contact h2,#projects h2{
     margin: 50px 0 30px 50px;
     text-align: left;
     color: crimson;
     font-family: 'Shojumaru';    
     font-size: 40px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+#pro h2{
+    font-family: 'Wendy One';
+    color: crimson;
+    letter-spacing: 1px;
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
@@ -228,6 +272,7 @@ nav div{
 }
 
 #quote{
+    color: darkgrey;
     font-family: 'Wendy One';
     font-size: 42px;
 }
@@ -252,11 +297,13 @@ nav div{
     margin: 10px;
     cursor: pointer;
     border-radius: 10%;
+    transition: transform 1s;
 }
-
-.col30{width: 30%; float: left;}
-.col25{width: 25%; float: left;}
-.col50{width: 45%; float: left;}
+#skills img:hover{transform: scale(1.5, 1.5);}
+#skl{display: flex;flex-wrap: wrap;justify-content: center;}
+.col30{width: 30%;}
+.col25{width: 20%;}
+.col50{width: 35%;}
 
 .card{
     box-shadow: 0 4px 8px 0 white;
@@ -288,6 +335,7 @@ nav div{
     left: 0;
     bottom: 0;
     width: 100%;
+    font-family: 'Acme';
     background-color:rgb(35, 35, 35);
     color: darkgrey;
     text-align: center;
@@ -303,3 +351,4 @@ a.ytfooter:hover,a.lkfooter:hover,a.igfooter:hover,a.twfooter:hover{
 a.ytfooter:active,a.igfooter:active,a.lkfooter:active,a.twfooter:active{
     background-color: rgb(35, 35, 35);
 }
+#projects{margin-bottom: 50px;}
