@@ -90,6 +90,9 @@
         margin-bottom: 20px !important;
     }
     .col50,.col25,.col30{width: 100% !important;float: none !important;}
+    .footer{
+        font-size: 20px !important;
+    }
 }
 
 body{
@@ -203,7 +206,7 @@ nav div{
     font-size: 25px;
     text-align: justify;
 }
-.aboutcontent h2,#skills h2,#projects h2{
+.aboutcontent h2,#skills h2,#projects h2,#contact h2{
     margin: 50px 0 30px 50px;
     text-align: left;
     color: crimson;
@@ -212,10 +215,16 @@ nav div{
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
-#skills h2,#projects h2{
+#skills h2,#projects h2,#contact h2{
     margin-left: 100px;
     margin-top: 100px;
     margin-bottom: 70px;
+}
+#contact h2{
+    background-color: rgb(35, 35, 35);
+    text-align: center;
+    margin: 0;
+    padding: 20px;
 }
 
 #quote{
@@ -273,4 +282,24 @@ nav div{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(35, 35, 35);
+    color: darkgrey;
+    text-align: center;
+    padding: 20px 30px;
+    justify-content: space-evenly;
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+a.ytfooter:hover,a.lkfooter:hover,a.igfooter:hover,a.twfooter:hover{
+    background-color: rgb(35, 35, 35);
+}
+a.ytfooter:active,a.igfooter:active,a.lkfooter:active,a.twfooter:active{
+    background-color: rgb(35, 35, 35);
 }
