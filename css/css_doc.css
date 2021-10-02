@@ -18,6 +18,8 @@
     }
     .card{width: 40% !important;}
     #skills img{margin-left: 20px !important;margin-right: 20px !important;}
+    .card:hover{transform: none !important;}
+    #skills img:hover{transform: none !important;}
 }
 @media only screen and (max-width: 800px) {
     .first{
@@ -37,6 +39,8 @@
     #skills img{
         margin-left: 20px !important;margin-right: 20px !important;
     }
+    #skills img:hover{transform: none !important;}
+    .card:hover{transform: none !important;}
 }
 /* for phones */
 @media only screen and (max-width: 540px) {
@@ -123,6 +127,8 @@
     .footer{
         font-size: 20px !important;
     }
+    .card:hover{transform: none !important;}
+    #skills img:hover{transform: none !important;}
 }
 
 @media only screen and (max-width: 280px){
@@ -131,6 +137,8 @@
     .card{width: 90% !important;}
     #skills img{width: 80% !important}
     #contact h2{font-size: 25px !important;}
+    .card:hover{transform: none !important;}
+    #skills img:hover{transform: none !important;}
 }
 
 body{
@@ -309,9 +317,11 @@ nav div{
     box-shadow: 0 4px 8px 0 white;
     text-align: justify;
     background-color: rgb(35, 35, 35);
-    width: 30%;
+    width: 25%;
     margin: 20px;
     padding: 10px;
+    cursor: pointer;
+    transition: transform 1s;
 }
 .card h2{
     font-size: 25px !important;
@@ -352,3 +362,8 @@ a.ytfooter:active,a.igfooter:active,a.lkfooter:active,a.twfooter:active{
     background-color: rgb(35, 35, 35);
 }
 #projects{margin-bottom: 50px;}
+
+.card:hover {
+    transform: scale(1.5,1.5);
+    box-shadow: 2px 4px 8px 4px white;
+}
